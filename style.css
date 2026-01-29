@@ -26,7 +26,7 @@
   margin: 0 15px;
   text-decoration: none;
   color: var(--bg_color);
-  font-size: medium;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -325,6 +325,10 @@
   color: var(--white_color);
 }
 
+.footer-left h1 {
+  font-size: 42px;
+}
+
 .footer-right {
   max-width: 500px;
 }
@@ -382,12 +386,17 @@ hr {
 }
 
 /* RESPONSIVE FIXES */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 
   .navbar {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
+    flex-direction: row;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .navbar nav a{
+    margin: 0 8px;
+    font-size: 16px;
   }
 
   .hero {
@@ -398,13 +407,26 @@ hr {
 
   .project-card {
     position: static;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: 150px;
   }
 
   .stats {
-    flex-direction: column;
-    gap: 20px;
-    margin: 20px;
+    flex-direction: row;
+    gap: 10px;
+    margin: 5px;
+    height: auto;
+    width: 80%;
+    top: 90px;
+    left: 180px;
+  }
+
+  .stats .stat h2 {
+    font-size: 38px;
+  }
+
+  .stats .stat p {
+    font-size: 14px;
   }
 
   .trust {
@@ -430,8 +452,12 @@ hr {
     width: 100%;
   }
 
+  .service-card h3{
+    font-size: 28px;
+  }
+
   .service-img {
-    height: 400px;
+    height: 800px;
     margin: 0;
   }
 
@@ -441,50 +467,58 @@ hr {
   }
 
   .testimonial {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    gap: 15px;
   }
 
   .test-img {
-    width: 100%;
+    width: 80%;
     height: 300px;
   }
 
-  .footer-top,
-  .footer-nav,
-  .footer-bottom {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-}
-
-/* MOBILE */
-@media (max-width: 576px) {
-
-  .hero-text h1 {
-    font-size: 40px;
-  }
-
-  .stats h2 {
-    font-size: 26px;
-  }
-
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .service-cards {
-    grid-template-columns: 1fr;
-    margin-top: 40px;
-  }
-
-  .test-left {
-    width: 100%;
-    margin-left: 0;
+  .test-left p{
+    font-size: 14px;
   }
 
   .footer {
     padding: 40px 20px;
+  }
+
+  .footer-top {
+    flex-direction: row;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .footer-left h1{
+    font-size: 25px;
+  }
+
+  .badges p{
+    flex-direction: row;
+    font-size: 15px;
+  }
+
+  .footer-right p{
+    font-size: 16px;
+  }
+
+  .footer-bottom{
+    flex-direction: row;
+  }
+
+  .footer-bottom-link a{
+    color: var(--white_color);
+  }
+
+  .footer-nav{
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .footer-nav .links a{
+    margin: 0 4px;
+    font-size: 15px;
   }
 }
