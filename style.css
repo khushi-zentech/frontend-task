@@ -519,6 +519,7 @@ hr {
   }
 }
 
+/* RESPONSIVE FIXES FOR MOBILE L - 425px */
 @media (max-width: 425px) {
 
   .navbar {
